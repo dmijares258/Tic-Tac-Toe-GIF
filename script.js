@@ -1,3 +1,5 @@
+
+
 const statusDisplay = document.querySelector('.game--status');
 
 let gameActive = true;
@@ -66,6 +68,8 @@ function handleResultValidation() {
 function handleCellClick(clickedCellEvent) {
     const clickedCell = clickedCellEvent.target;
     const clickedCellIndex = parseInt(clickedCell.getAttribute('data-cell-index'));
+
+
 
     if (gameState[clickedCellIndex] !== "" || !gameActive) {
         return;
